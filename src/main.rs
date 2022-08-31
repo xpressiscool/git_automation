@@ -6,6 +6,8 @@ fn main() {
         "it might work",
         "ooh new feature!",
         "might break the program",
+        "i love git",
+        "i love programming"
     ];
     let index = rand::thread_rng().gen_range(0..messages.len());
     let message = messages[index];
