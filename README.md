@@ -17,4 +17,4 @@ Now you can run the command line by running the following command:
 ```bash
 ./target/debug/automate.exe
 ```
-I love programming!
+I love rust!
