@@ -1,3 +1,3 @@
 # git_automation
 
-GIT IS FUN!
+GIT COMMIT -m "CHANGES"
