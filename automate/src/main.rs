@@ -10,7 +10,6 @@ fn main() {
 
     // generates random index for a message to commit
     let mut result = rand::thread_rng().gen_range(0..messages.len());
-    let message = messages[index];
 
     let mut add = Command::new("git")
         .args(["add", "."])
