@@ -5,7 +5,8 @@ I wanted to make git accessible to everyone.
 
 ## Why Rust?
 Rust is great for working with the command line and is one of my favorite programming languages right now.
-
+## Learn More
+You can copy the source code in the src/main.rs to use in your project.
 ### Git Started
 Git started by cloneing the repository:
 ```bash
