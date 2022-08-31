@@ -1,3 +1,3 @@
 # git_automation
 
-I LOVE PROGRAMMING!
+I Can CODE!
