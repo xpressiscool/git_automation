@@ -11,4 +11,5 @@ fn main() {
     let mut index = rand::thread_rng();
     let mut add = Command::new("git add .");
     let mut commit = Command::new("git commit -m {}", rng.gen_range(0..messages.len()));
+    let mut push = Command::new("git push");
 }
