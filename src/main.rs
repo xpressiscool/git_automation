@@ -1,5 +1,5 @@
 use std::process::Command;
-use rand::prelude::SliceRandom;
+use rand::Rng;
 
 fn main() {
     let messages = vec![
@@ -7,16 +7,18 @@ fn main() {
         "ooh new feature!",
         "might break the program",
     ];
-    let message: &str = messages 
-        .choose_multiple(&mut rand::thread_rng(), 1)
-        .collect();
-
+    let index = rand::thread_rng().gen_range(0..messages.len());
+    let message = messages[index];
     // generates random index for a message to commit
     let result = Command::new("git").args(["pull"]).output();
     println!("{:?}", result);
-    let result = Command::new("git").args(["add", "."]).output();
+    let result = Command::new("git")
+        .args(["add", "."])
+        .output();
     println!("{:?}", result);
-    let result = Command::new("git").args(["commit", "-m", message]).output();
+    let result = Command::new("git")
+        .args(["commit", "-m", message])
+        .output();
     println!("{:?}", result);
     let result = Command::new("git").args(["push"]).output();
     println!("{:?}", result);
