@@ -16,18 +16,17 @@ fn main() {
 
     // pulls the code from repo
     let result = Command::new("git").args(["pull"]).output();
-    // prints the result from running the command
     println!("{:?}", result);
 
+    // stages the changes
     let result = Command::new("git").args(["add", "."]).output();
-    // prints the result from running the command
     println!("{:?}", result);
 
+    // commits the changes to the repository
     let result = Command::new("git").args(["commit", "-m", message]).output();
-    // prints the result from running the command
     println!("{:?}", result);
 
+    // pushes all of the commits to the repository
     let result = Command::new("git").args(["push"]).output();
-    // prints the result from running the command
     println!("{:?}", result);
 }
