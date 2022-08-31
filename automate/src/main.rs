@@ -13,7 +13,7 @@ fn main() {
     println!("{:?}", result);
     let result = Command::new("git").args(["add", "."]).output();
     println!("{:?}", add);
-    let result = Command::new("git").args(["commit", "-m changes"]).output();
+    let result = Command::new("git").args(["commit", "-m more changes"]).output();
     println!("{:?}", result);
     let result = Command::new("git").args(["push"]).output();
     println!("{:?}", push);
