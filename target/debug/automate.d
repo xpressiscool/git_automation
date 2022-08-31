@@ -1,1 +1,1 @@
-C:\Users\ababb\git_automation\automate\target\debug\automate.exe: C:\Users\ababb\git_automation\automate\src\main.rs
+C:\Users\ababb\git_automation\target\debug\automate.exe: C:\Users\ababb\git_automation\src\main.rs

@@ -1,4 +1,3 @@
-use rand::Rng;
 use std::process::Command;
 
 fn main() {
@@ -12,9 +11,9 @@ fn main() {
     let result = Command::new("git").args(["pull"]).output();
     println!("{:?}", result);
     let result = Command::new("git").args(["add", "."]).output();
-    println!("{:?}", add);
+    println!("{:?}", result);
     let result = Command::new("git").args(["commit", "-m more changes"]).output();
     println!("{:?}", result);
     let result = Command::new("git").args(["push"]).output();
-    println!("{:?}", push);
+    println!("{:?}", result);
 }
