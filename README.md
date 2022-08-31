@@ -1,3 +1,3 @@
 # git_automation
 
-PROGRAMMING!
+GIT IS FUN!
