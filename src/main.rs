@@ -7,7 +7,10 @@ fn main() {
         "ooh new feature!",
         "might break the program",
         "i love git",
-        "i love programming"
+        "i love programming",
+        "this is cool code",
+        "i love rust",
+        "this is a cool program"
     ];
     // gets random number integer
     let index = rand::thread_rng()
